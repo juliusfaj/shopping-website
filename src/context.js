@@ -28,11 +28,12 @@ const AppProvider = ({ children }) => {
         const { tracks } = response;
         const { items } = tracks;
 
+        console.log(items);
         setSearchData(items);
         setIsLoading(false);
       })
       .catch((err) => {
-        setSearchData({});
+        setSearchData([]);
         setIsLoading(false);
       });
   };
