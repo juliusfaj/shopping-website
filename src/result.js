@@ -14,8 +14,6 @@ const Result = () => {
     return (
       <div>
         {searchData ? (
-          <p className="not-found">!!!song not found</p>
-        ) : (
           searchData.map((song, index) => {
             const { data } = song;
             const { name, artists, album, id, albumOfTrack, duration } = data;
@@ -39,6 +37,8 @@ const Result = () => {
               </div>
             );
           })
+        ) : (
+          <p className="not-found">!!!song not found</p>
         )}
       </div>
     );
