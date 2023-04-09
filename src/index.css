@@ -140,3 +140,12 @@ span:before {
   height: 70vh;
   border: 1px solid blue;
 }
+
+.not-found {
+  text-align: center;
+  text-transform: capitalize;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.5rem;
+  color: red;
+}

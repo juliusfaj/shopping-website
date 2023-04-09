@@ -13,8 +13,8 @@ const Result = () => {
   } else {
     return (
       <div>
-        {!searchData ? (
-          <p>song not found</p>
+        {searchData ? (
+          <p className="not-found">!!!song not found</p>
         ) : (
           searchData.map((song, index) => {
             const { data } = song;
