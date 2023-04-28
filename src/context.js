@@ -15,7 +15,17 @@ const initialState = {
 const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  return <AppContext.Provider value={{}}>{children}</AppContext.Provider>;
+  const [showSideBar, setShowSideBar] = useState(false);
+
+  const handleToggle = () => {
+    setShowSideBar(!showSideBar);
+  };
+
+  return (
+    <AppContext.Provider value={{ handleToggle, ...state, showSideBar }}>
+      {children}
+    </AppContext.Provider>
+  );
 };
 
 export const useGlobalContext = () => {
