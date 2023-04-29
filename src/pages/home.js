@@ -17,9 +17,8 @@ const Home = () => {
           <div className="overlay">
             <h1>men fashion</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              modi libero beatae hic soluta veritatis eveniet itaque, suscipit,
-              repellat corrupti aliquid cumque voluptatum perferendis possimus!
+              Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet
+              amet amet ndiam elitr ipsum diam
             </p>
             <button>shop now</button>
           </div>
