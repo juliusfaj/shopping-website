@@ -20,7 +20,7 @@ import product_9 from "./img/product-9.jpg";
 
 export const shoppingData = [
   {
-    id: new Date().getTime().toString(),
+    id: 1,
     category: "clothes",
     name: "top female",
     amount: 0,
@@ -28,21 +28,21 @@ export const shoppingData = [
   },
 
   {
-    id: new Date().getTime().toString(),
+    id: 2,
     category: "device",
     name: "Samsung camera",
     amount: 0,
     img: cat_2,
   },
   {
-    id: new Date().getTime().toString(),
+    id: 3,
     category: "shoes",
     name: "neekers",
     amount: 0,
     img: cat_3,
   },
   {
-    id: new Date().getTime().toString(),
+    id: 4,
     category: "cream",
     name: "nevia",
     amount: 0,
@@ -51,63 +51,63 @@ export const shoppingData = [
 
   //   product
   {
-    id: new Date().getTime().toString(),
+    id: 5,
     category: "device",
     name: "LG camera",
     amount: 0,
     img: product_1,
   },
   {
-    id: new Date().getTime().toString(),
+    id: 6,
     category: "clothes",
     name: "sweeter",
     amount: 0,
     img: product_2,
   },
   {
-    id: new Date().getTime().toString(),
+    id: 7,
     category: "device",
     name: "table lamp",
     amount: 0,
     img: product_3,
   },
   {
-    id: new Date().getTime().toString(),
+    id: 8,
     category: "shoes",
     name: "black sneekers",
     amount: 0,
     img: product_4,
   },
   {
-    id: new Date().getTime().toString(),
+    id: 9,
     category: "device",
     name: "drone",
     amount: 0,
     img: product_5,
   },
   {
-    id: new Date().getTime().toString(),
+    id: 10,
     category: "device",
     name: "watch",
     amount: 0,
     img: product_6,
   },
   {
-    id: new Date().getTime().toString(),
+    id: 11,
     category: "clothes",
     name: "casual wear",
     amount: 0,
     img: product_7,
   },
   {
-    id: new Date().getTime().toString(),
+    id: 12,
     category: "cream",
     name: "body cool",
     amount: 0,
     img: product_8,
   },
   {
-    id: new Date().getTime().toString(),
+    id: 13,
     category: "office",
     name: "office chair",
     amount: 0,
