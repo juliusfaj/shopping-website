@@ -132,7 +132,7 @@
   display: none;
 }
 
-/* 992px */
+/* 992px  for nav*/
 @media screen and (min-width: 992px) {
   .small-nav {
     display: none !important;
@@ -262,6 +262,15 @@
 .second-container,
 .third-container {
   height: 12rem;
+  transition: all 0.5s ease;
+}
+
+.second-container:hover,
+.third-container:hover {
+  /* correct this */
+  background-size: 33rem;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .second-container .overlay p:nth-child(1),
@@ -306,6 +315,30 @@
 .third-container {
   background: url("./img/offer-2.jpg");
   background-size: cover;
+}
+
+@media screen and (min-width: 992px) {
+  .banner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "first first second"
+      "first first third";
+    grid-column-gap: 30px;
+    margin: 2rem 5rem;
+  }
+
+  .first-container {
+    grid-area: first;
+    height: auto;
+  }
+  .second-container {
+    grid-area: second;
+  }
+  .third-container {
+    grid-area: third;
+  }
 }
 
 /* end */
