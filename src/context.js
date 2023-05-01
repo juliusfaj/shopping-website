@@ -3,11 +3,13 @@ import { useContext, useState, useEffect, useReducer } from "react";
 
 import reducer from "./reducer";
 
+import { shoppingData } from "./data";
+
 const AppContext = React.createContext();
 
 const initialState = {
   loading: false,
-  cart: [],
+  cart: shoppingData,
   total: 0,
   totalAmount: 0,
 };
