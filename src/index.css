@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&family=Source+Sans+Pro:ital,wght@0,400;1,600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -367,5 +369,69 @@
   background: var(--nav-background);
   color: white;
   border-color: var(--nav-background);
+}
+
+.product-item {
+  margin: 3rem 0;
+}
+
+.product-img-container {
+  height: 10rem;
+  width: 10rem;
+  border: 1px solid var(--nav-background);
+}
+
+.product-img-container img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.product-desc {
+  border: 1px solid red;
+  margin-top: 1rem;
+  max-width: 20rem;
+}
+
+.product-desc .name-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-desc .name-container p {
+  text-transform: capitalize;
+  font-family: "--apple-system", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.product-desc .name-container p:nth-child(1) {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.product-desc .name-container p:nth-child(2) {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.product-desc .amount-container {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.product-desc .amount-container .amount-no {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-desc .amount-container .amount-no p {
+  margin: 0.4rem 0;
+  font-size: 1.3rem;
 }
 /* end */
