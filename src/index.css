@@ -342,3 +342,30 @@
 }
 
 /* end */
+
+/* product section */
+
+.display-products {
+  margin: 1rem;
+}
+
+.display-products .filter-btn-container {
+  text-align: center;
+}
+
+.display-products .filter-btn-container button {
+  margin-right: 0.6rem;
+  background: none;
+  border: 1px solid var(--nav-btn-color);
+  padding: 0.3rem 0.5rem;
+  text-transform: capitalize;
+  transition: var(--page-transition);
+  cursor: pointer;
+}
+
+.display-products .filter-btn-container button:hover {
+  background: var(--nav-background);
+  color: white;
+  border-color: var(--nav-background);
+}
+/* end */
