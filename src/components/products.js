@@ -1,20 +1,23 @@
 import React from "react";
 
+import Product from "./product";
+
 import { useGlobalContext } from "../context";
 
-const Product = () => {
+const Products = () => {
   const { cart } = useGlobalContext();
 
   const btns = ["all", ...new Set(cart.map((item) => item.category))];
   return (
-    <div className="display-products">
+    <section className="display-products">
       <div className="filter-btn-container">
         {btns.map((btn, index) => {
           return <button key={index}>{btn}</button>;
         })}
       </div>
-    </div>
+      <Product cart={cart} />
+    </section>
   );
 };
 
-export default Product;
+export default Products;

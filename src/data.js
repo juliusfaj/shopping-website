@@ -21,6 +21,7 @@ import product_9 from "./img/product-9.jpg";
 export const shoppingData = [
   {
     id: 1,
+    price: 30.0,
     category: "clothes",
     name: "top female",
     amount: 0,
@@ -29,6 +30,7 @@ export const shoppingData = [
 
   {
     id: 2,
+    price: 70.0,
     category: "device",
     name: "Samsung camera",
     amount: 0,
@@ -36,6 +38,7 @@ export const shoppingData = [
   },
   {
     id: 3,
+    price: 15.0,
     category: "shoes",
     name: "neekers",
     amount: 0,
@@ -43,6 +46,7 @@ export const shoppingData = [
   },
   {
     id: 4,
+    price: 5.0,
     category: "cream",
     name: "nevia",
     amount: 0,
@@ -52,6 +56,7 @@ export const shoppingData = [
   //   product
   {
     id: 5,
+    price: 200.0,
     category: "device",
     name: "LG camera",
     amount: 0,
@@ -59,13 +64,16 @@ export const shoppingData = [
   },
   {
     id: 6,
+    price: 40.0,
     category: "clothes",
     name: "sweeter",
     amount: 0,
     img: product_2,
   },
+
   {
     id: 7,
+    price: 50.0,
     category: "device",
     name: "table lamp",
     amount: 0,
@@ -73,6 +81,7 @@ export const shoppingData = [
   },
   {
     id: 8,
+    price: 15.0,
     category: "shoes",
     name: "black sneekers",
     amount: 0,
@@ -80,6 +89,7 @@ export const shoppingData = [
   },
   {
     id: 9,
+    price: 700.0,
     category: "device",
     name: "drone",
     amount: 0,
@@ -87,6 +97,7 @@ export const shoppingData = [
   },
   {
     id: 10,
+    price: 80.0,
     category: "device",
     name: "watch",
     amount: 0,
@@ -94,6 +105,7 @@ export const shoppingData = [
   },
   {
     id: 11,
+    price: 35.0,
     category: "clothes",
     name: "casual wear",
     amount: 0,
@@ -101,6 +113,7 @@ export const shoppingData = [
   },
   {
     id: 12,
+    price: 5.0,
     category: "cream",
     name: "body cool",
     amount: 0,
@@ -108,6 +121,7 @@ export const shoppingData = [
   },
   {
     id: 13,
+    price: 70.0,
     category: "office",
     name: "office chair",
     amount: 0,
