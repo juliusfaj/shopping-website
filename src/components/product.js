@@ -1,9 +1,9 @@
 import React from "react";
-import { FaChevronUp, FaChevronDown } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const Product = ({ cart }) => {
   return (
-    <div>
+    <div className="product-item-container">
       {cart.map((item, index) => {
         const { name, img, amount, price } = item;
 
@@ -20,11 +20,11 @@ const Product = ({ cart }) => {
               <div className="amount-container">
                 <div className="amount-no">
                   <button className="decrease-btn">
-                    <FaChevronUp />
+                    <FaChevronLeft />
                   </button>
                   <p>{amount}</p>
                   <button className="increase-btn">
-                    <FaChevronDown />
+                    <FaChevronRight />
                   </button>
                 </div>
                 <button className="add-to-cart">add to cart</button>
