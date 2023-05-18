@@ -5,14 +5,18 @@ import Product from "./product";
 import { useGlobalContext } from "../context";
 
 const Products = () => {
-  const { cart } = useGlobalContext();
+  const { cart, filterBtn, shoppingData } = useGlobalContext();
 
-  const btns = ["all", ...new Set(cart.map((item) => item.category))];
+  const btns = ["all", ...new Set(shoppingData.map((item) => item.category))];
   return (
     <section className="display-products">
       <div className="filter-btn-container">
         {btns.map((btn, index) => {
-          return <button key={index}>{btn}</button>;
+          return (
+            <button key={index} onClick={() => filterBtn(btn)}>
+              {btn}
+            </button>
+          );
         })}
       </div>
       <Product cart={cart} />

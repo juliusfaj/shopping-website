@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background: rgba(193, 193, 218, 0.178);
+}
+
 :root {
   --nav-background: rgb(56, 55, 55);
   --nav-btn-color: gray;
@@ -36,7 +40,7 @@
   /* border: 1px solid blue; */
   background: var(--nav-background);
   transform: translateX(100%);
-  max-width: 35rem;
+  max-width: 100%;
   visibility: hidden;
   padding: 1.5rem 0;
   margin-left: auto;
@@ -210,7 +214,7 @@
   margin-bottom: 1.5rem;
 }
 
-.banner div .overlay {
+.overlay {
   width: 100%;
   height: 100%;
   display: flex;
@@ -375,8 +379,8 @@
   display: flex;
   overflow: hidden;
   flex-wrap: wrap;
-  justify-content: space-between;
-
+  justify-content: center;
+  column-gap: 6rem;
   max-width: 70rem;
   /* border: 1px solid red; */
   margin: 0 auto;
@@ -385,12 +389,14 @@
 .product-item {
   margin: 3rem 0;
   width: 15rem;
+  /* border: 1px solid red; */
 }
 
 .product-img-container {
   height: 10rem;
   width: 10rem;
   border: 1px solid var(--nav-background);
+  box-shadow: 1px 1px 3px black;
 }
 
 .product-img-container img {
@@ -435,8 +441,8 @@
 }
 
 .product-desc .amount-container .amount-no {
-  /* border: 1px solid blue; */
   display: flex;
+  /* border: 1px solid blue; */
   /* flex-direction: column; */
   justify-content: space-between;
   align-items: center;
@@ -469,4 +475,370 @@
   color: white;
   border-color: var(--nav-background);
 }
+/* end */
+
+/* before footer */
+.before-footer {
+  padding: 1rem;
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  /* border: 1px solid red; */
+  max-width: 78rem;
+  margin: 0 auto;
+}
+
+.before-footer .second-container,
+.before-footer .third-container {
+  flex: 1 1 20rem;
+  height: 19rem;
+  width: auto;
+  background-position: center;
+  transition: var(--page-transition);
+}
+
+.before-footer .second-container:hover,
+.before-footer .third-container:hover {
+  background-size: auto;
+}
+
+/* end */
+
+/* footer */
+
+.footer {
+  background: var(--nav-background);
+  padding: 6rem 1rem 2rem 1rem;
+  color: var(--text-color-2);
+  margin-top: 5rem;
+}
+
+.container-div {
+  /* border: 1px solid red; */
+}
+
+.container-div .first-div,
+.container-div .second-div,
+.container-div .third-div,
+.container-div .forth-div {
+  /* border: 1px solid blue; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-bottom: 3rem;
+}
+
+.container-div .first-div h1,
+.container-div .second-div h1,
+.container-div .third-div h1,
+.container-div .forth-div h1 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.container-div .first-div p,
+.forth-div p {
+  font-weight: 400;
+  font-size: 0.99rem;
+}
+
+.container-div .first-div .desc {
+  margin: 1.2rem 0;
+}
+
+.container-div .first-div div {
+  padding-left: 1.5rem;
+}
+
+.container-div .first-div div p {
+  margin-bottom: 0.5rem;
+}
+
+.footer-nav {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-nav a {
+  color: var(--text-color-2);
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.forth-div p {
+  margin: 1.2rem 0 0.7rem 0;
+}
+
+.subscribe {
+  /* border: 1px solid red; */
+}
+
+.subscribe .subscribe-form {
+  width: 100%;
+  /* border: 1px solid pink; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: stretch;
+  margin: 0 0 1rem 0;
+}
+
+.subscribe .subscribe-form input {
+  text-transform: capitalize;
+  padding: 0.7rem;
+  font-size: 1rem;
+  width: 80%;
+  height: 100%;
+}
+
+.subscribe .subscribe-form button {
+  cursor: pointer;
+  /* padding: 0.63rem 0; */
+  text-transform: capitalize;
+  width: 20%;
+  background: gold;
+  transition: var(--page-transition);
+  color: rgb(59, 59, 59);
+  border: none;
+  font-size: 1.05rem;
+  border-left: none;
+}
+
+.subscribe .subscribe-form button:hover,
+.subscribe .follow .social button:hover {
+  background: rgb(201, 171, 6);
+}
+
+.subscribe .follow {
+  /* border: 1px solid red; */
+}
+
+.subscribe .follow h1 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.subscribe .follow .social button {
+  font-size: 2rem;
+  background: gold;
+  border: 1px solid gold;
+  margin-right: 0.5rem;
+  padding: 0.2rem 0.2rem 0 0.2rem;
+  transition: var(--page-transition);
+}
+
+.subscribe .follow .social button a {
+  color: rgb(59, 59, 59);
+}
+
+.line {
+  height: 1px;
+  background-color: var(--nav-btn-color);
+  margin-bottom: 1.5rem;
+}
+
+.bottom-section {
+  /* border: 1px solid red; */
+  text-align: center;
+}
+
+.bottom-section p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.bottom-section p a {
+  color: gold;
+  text-decoration: none;
+  transition: var(--page-transition);
+}
+
+.bottom-section p a:hover {
+  color: rgb(201, 171, 6);
+}
+
+@media screen and (min-width: 768px) {
+  .container-div {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 3rem;
+    grid-template-areas: "first first first first" "second third forth forth";
+    padding: 0 2rem;
+  }
+
+  .container-div .first-div {
+    grid-area: first;
+    margin-bottom: 0;
+  }
+  .container-div .second-div {
+    grid-area: second;
+  }
+  .container-div .third-div {
+    grid-area: third;
+  }
+  .container-div .forth-div {
+    grid-area: forth;
+  }
+
+  .bottom-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .footer {
+    padding: 6rem 2rem 2rem 2rem;
+  }
+
+  .container-div {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "first first second third forth forth";
+    column-gap: 1rem;
+  }
+}
+/*  end */
+
+/* contact section */
+
+.contact-container {
+  /* border: 1px solid red; */
+  padding: 4rem 1rem;
+}
+
+.contact-container .line-container {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.contact-container .line-container h1 {
+  color: var(--nav-background);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  width: 14rem;
+}
+
+.contact-container .line-container .contact-line {
+  border: 1px dashed rgba(128, 128, 128, 0.212);
+  height: 2px;
+  width: 100%;
+}
+
+.contact-us {
+  /* border: 1px solid blue; */
+}
+
+.contact-us .contact-from-container {
+  padding: 2rem;
+  background: white;
+}
+
+.contact-us .contact-from-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-us .contact-from-container form input,
+.contact-us .contact-from-container form textarea {
+  margin-bottom: 1rem;
+  padding: 0.7rem 0.5rem;
+  text-transform: capitalize;
+  border: 1px solid rgba(220, 220, 221, 0.911);
+  font-size: 0.95rem;
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.contact-us .contact-from-container form textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 12rem;
+}
+
+.contact-us .contact-from-container form button {
+  font-size: 0.9rem;
+  background: gold;
+  border: 1px solid gold;
+  text-transform: capitalize;
+  padding: 0.7rem 1.3rem;
+  transition: var(--page-transition);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.contact-us .contact-from-container form button:hover {
+  background: rgb(243, 207, 2);
+}
+
+.contact-us .contact-address-container {
+  margin-top: 3rem;
+}
+
+.contact-address-container .address-img-container {
+  padding: 2rem;
+  background: white;
+  width: 100%;
+  margin-bottom: 2rem;
+  height: 20rem;
+}
+
+.contact-address-container .address-img-container img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: rgba(193, 193, 218, 0.178);
+}
+
+.contact-address-container .address-container {
+  padding: 2rem;
+  background: white;
+}
+
+.contact-address-container .address-container p {
+  color: var(--nav-btn-color);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.01rem;
+  margin-bottom: 0.4rem;
+}
+
+@media screen and (min-width: 992px) {
+  .contact-us {
+    display: flex;
+    column-gap: 2rem;
+  }
+
+  .contact-us .contact-from-container {
+    flex: 1 1 60%;
+    max-width: 60%;
+  }
+  .contact-us .contact-address-container {
+    margin-top: 0;
+    flex: 1 1 40%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-container {
+    padding: 4rem;
+  }
+}
+/* end */
+
+/* cart section */
+
 /* end */

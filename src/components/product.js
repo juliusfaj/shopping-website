@@ -1,11 +1,15 @@
 import React from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
+import { useGlobalContext } from "../context";
+
 const Product = ({ cart }) => {
+  const { addToCart } = useGlobalContext();
+
   return (
     <div className="product-item-container">
       {cart.map((item, index) => {
-        const { name, img, amount, price } = item;
+        const { name, img, amount, price, id } = item;
 
         return (
           <div className="product-item" key={index}>
@@ -27,7 +31,12 @@ const Product = ({ cart }) => {
                     <FaChevronRight />
                   </button>
                 </div>
-                <button className="add-to-cart">add to cart</button>
+                <button
+                  className="add-to-cart"
+                  onClick={() => addToCart(name, img, amount, price, id)}
+                >
+                  add to cart
+                </button>
               </div>
             </div>
           </div>

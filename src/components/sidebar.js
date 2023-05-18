@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { useGlobalContext } from "../context";
 
 const SideBar = () => {
-  const { showSideBar, totalAmount } = useGlobalContext();
+  const { showSideBar, totalAmount, hideNav } = useGlobalContext();
 
   return (
     <nav className={showSideBar ? "sidebar show-sidebar" : "sidebar"}>
@@ -16,9 +16,15 @@ const SideBar = () => {
         <p>{totalAmount}</p>
       </div>
       <div className="nav-links">
-        <Link to="/">Home</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/cart">Cart</Link>
+        <Link to="/" onClick={hideNav}>
+          Home
+        </Link>
+        <Link to="/contact" onClick={hideNav}>
+          Contact
+        </Link>
+        <Link to="/cart" onClick={hideNav}>
+          Cart
+        </Link>
       </div>
     </nav>
   );

@@ -1,5 +1,13 @@
 import React from "react";
 
+import {
+  FaFacebook,
+  FaTwitter,
+  FaWhatsapp,
+  FaLinkedin,
+  FaGithub,
+} from "react-icons/fa";
+
 // image import
 import cat_1 from "./img/cat-1.jpg";
 import cat_2 from "./img/cat-2.jpg";
@@ -40,7 +48,7 @@ export const shoppingData = [
     id: 3,
     price: 15.0,
     category: "shoes",
-    name: "neekers",
+    name: "sneekers",
     amount: 0,
     img: cat_3,
   },
@@ -127,4 +135,12 @@ export const shoppingData = [
     amount: 0,
     img: product_9,
   },
+];
+
+export const icons = [
+  { link: "/", icon: <FaFacebook /> },
+  { link: "/", icon: <FaGithub /> },
+  { link: "/", icon: <FaTwitter /> },
+  { link: "/", icon: <FaLinkedin /> },
+  { link: "/", icon: <FaWhatsapp /> },
 ];
