@@ -17,7 +17,9 @@ const BigNav = () => {
       </div>
       <div className="cart-amount">
         <button className="open-cart">
-          <FaCartPlus />
+          <Link to="/cart">
+            <FaCartPlus />
+          </Link>
         </button>
         <p>{totalAmount}</p>
       </div>

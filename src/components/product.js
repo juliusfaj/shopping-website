@@ -4,7 +4,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useGlobalContext } from "../context";
 
 const Product = ({ cart }) => {
-  const { addToCart } = useGlobalContext();
+  const { addToCart, addToAmount, subFromAmount } = useGlobalContext();
 
   return (
     <div className="product-item-container">
@@ -23,11 +23,17 @@ const Product = ({ cart }) => {
               </div>
               <div className="amount-container">
                 <div className="amount-no">
-                  <button className="decrease-btn">
+                  <button
+                    className="decrease-btn"
+                    onClick={() => subFromAmount(id)}
+                  >
                     <FaChevronLeft />
                   </button>
                   <p>{amount}</p>
-                  <button className="increase-btn">
+                  <button
+                    className="increase-btn"
+                    onClick={() => addToAmount(id)}
+                  >
                     <FaChevronRight />
                   </button>
                 </div>

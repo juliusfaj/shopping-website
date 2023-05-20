@@ -66,7 +66,7 @@ const Footer = () => {
       <div className="line"></div>
       <section className="bottom-section">
         <p>
-          &copy; <Link to="/">Domain</Link>, All Rights Reserved. Designed by
+          &copy; <Link to="/">Domain</Link>, All Rights Reserved. Designed by{" "}
           <Link to="/">Funnso Julius</Link>
         </p>
         <div className="payment-img">

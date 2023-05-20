@@ -32,7 +32,7 @@ export const shoppingData = [
     price: 30.0,
     category: "clothes",
     name: "top female",
-    amount: 0,
+    amount: 1,
     img: cat_1,
   },
 
@@ -41,7 +41,7 @@ export const shoppingData = [
     price: 70.0,
     category: "device",
     name: "Samsung camera",
-    amount: 0,
+    amount: 1,
     img: cat_2,
   },
   {
@@ -49,7 +49,7 @@ export const shoppingData = [
     price: 15.0,
     category: "shoes",
     name: "sneekers",
-    amount: 0,
+    amount: 1,
     img: cat_3,
   },
   {
@@ -57,7 +57,7 @@ export const shoppingData = [
     price: 5.0,
     category: "cream",
     name: "nevia",
-    amount: 0,
+    amount: 1,
     img: cat_4,
   },
 
@@ -67,7 +67,7 @@ export const shoppingData = [
     price: 200.0,
     category: "device",
     name: "LG camera",
-    amount: 0,
+    amount: 1,
     img: product_1,
   },
   {
@@ -75,7 +75,7 @@ export const shoppingData = [
     price: 40.0,
     category: "clothes",
     name: "sweeter",
-    amount: 0,
+    amount: 1,
     img: product_2,
   },
 
@@ -84,7 +84,7 @@ export const shoppingData = [
     price: 50.0,
     category: "device",
     name: "table lamp",
-    amount: 0,
+    amount: 1,
     img: product_3,
   },
   {
@@ -92,7 +92,7 @@ export const shoppingData = [
     price: 15.0,
     category: "shoes",
     name: "black sneekers",
-    amount: 0,
+    amount: 1,
     img: product_4,
   },
   {
@@ -100,7 +100,7 @@ export const shoppingData = [
     price: 700.0,
     category: "device",
     name: "drone",
-    amount: 0,
+    amount: 1,
     img: product_5,
   },
   {
@@ -108,7 +108,7 @@ export const shoppingData = [
     price: 80.0,
     category: "device",
     name: "watch",
-    amount: 0,
+    amount: 1,
     img: product_6,
   },
   {
@@ -116,7 +116,7 @@ export const shoppingData = [
     price: 35.0,
     category: "clothes",
     name: "casual wear",
-    amount: 0,
+    amount: 1,
     img: product_7,
   },
   {
@@ -124,7 +124,7 @@ export const shoppingData = [
     price: 5.0,
     category: "cream",
     name: "body cool",
-    amount: 0,
+    amount: 1,
     img: product_8,
   },
   {
@@ -132,7 +132,7 @@ export const shoppingData = [
     price: 70.0,
     category: "office",
     name: "office chair",
-    amount: 0,
+    amount: 1,
     img: product_9,
   },
 ];
