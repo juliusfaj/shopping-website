@@ -80,8 +80,11 @@ const AppProvider = ({ children }) => {
     handleAlert(false, "cart cleared", "rgb(250, 111, 111)");
   };
 
-  const addToCart = (name, img, price, amount, id) => {
-    setAddCart([...addCart, { id, name, img, price, amount }]);
+  const addToCart = (name, img, price, amount) => {
+    setAddCart([
+      ...addCart,
+      { id: new Date().getTime().toString(), name, img, price, amount },
+    ]);
 
     handleAlert(true, "added to cart", "lightgreen");
   };
