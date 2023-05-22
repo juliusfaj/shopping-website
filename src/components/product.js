@@ -1,5 +1,6 @@
 import React from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import Alert from "./alert";
 
 import { useGlobalContext } from "../context";
 

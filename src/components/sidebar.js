@@ -11,7 +11,9 @@ const SideBar = () => {
     <nav className={showSideBar ? "sidebar show-sidebar" : "sidebar"}>
       <div className="cart-amount">
         <button className="open-cart">
-          <FaCartPlus />
+          <Link to="/cart" onClick={hideNav}>
+            <FaCartPlus />
+          </Link>
         </button>
         <p>{totalAmount}</p>
       </div>

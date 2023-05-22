@@ -37,6 +37,30 @@ const AppProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
   const [payment, setPayment] = useState(0);
 
+  const [alertMSG, setAlertMSG] = useState({
+    bool: false,
+    msg: "added to cart",
+    status: "lightgreen",
+  });
+
+  const handleAlert = (bool, msg, status) => {
+    setAlertMSG({ bool, msg, status });
+  };
+
+  const getPayment = () => {
+    const pay = cartItems.reduce((total, item) => {
+      const { price, amount } = item;
+      const totalPay = amount * price;
+      total += totalPay;
+      return total;
+    }, 0);
+    setPayment(pay);
+  };
+
+  useEffect(() => {
+    getPayment();
+  }, [cartItems]);
+
   const handleToggle = () => {
     setShowSideBar(!showSideBar);
   };
@@ -53,10 +77,13 @@ const AppProvider = ({ children }) => {
 
   const hideNav = () => {
     setShowSideBar(false);
+    handleAlert(false, "cart cleared", "rgb(250, 111, 111)");
   };
 
   const addToCart = (name, img, price, amount, id) => {
     setAddCart([...addCart, { id, name, img, price, amount }]);
+
+    handleAlert(true, "added to cart", "lightgreen");
   };
 
   useEffect(() => {
@@ -100,6 +127,18 @@ const AppProvider = ({ children }) => {
       });
     setCart(getAmount);
   };
+
+  const clearCart = () => {
+    setAddCart([]);
+    handleAlert(true, "cart cleared", "rgb(250, 111, 111)");
+  };
+
+  const removeItem = (id) => {
+    const filterItems = addCart.filter((item) => item.id !== id);
+    setAddCart(filterItems);
+    handleAlert(true, "item removed", "rgb(250, 111, 111)");
+  };
+
   return (
     <AppContext.Provider
       value={{
@@ -115,6 +154,11 @@ const AppProvider = ({ children }) => {
         addToAmount,
         subFromAmount,
         payment,
+        clearCart,
+        removeItem,
+        alertMSG,
+        handleAlert,
+        addCart,
       }}
     >
       {children}

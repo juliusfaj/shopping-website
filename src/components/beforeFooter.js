@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const BeforeFooter = () => {
   return (
@@ -7,7 +8,9 @@ const BeforeFooter = () => {
         <div className="overlay">
           <p>save 20%</p>
           <p>special offer</p>
-          <button>shop now</button>
+          <button>
+            <Link to="/">shop now</Link>
+          </button>
         </div>
       </div>
 
@@ -15,7 +18,9 @@ const BeforeFooter = () => {
         <div className="overlay">
           <p>save 20%</p>
           <p>special offer</p>
-          <button>shop now</button>
+          <button>
+            <Link to="/">shop now</Link>
+          </button>
         </div>
       </div>
     </section>
