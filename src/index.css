@@ -60,7 +60,7 @@ body {
 
 .sidebar .cart-amount {
   padding-left: 1rem;
-  position: relative;
+  position: fixed;
 }
 
 .sidebar .cart-amount button {
@@ -68,6 +68,7 @@ body {
   font-size: 1.5rem;
   border: none;
   background: none;
+  /* border: 1px solid red; */
 }
 
 .sidebar .cart-amount button a {
@@ -76,8 +77,8 @@ body {
 
 .sidebar .cart-amount p {
   position: absolute;
-  top: -40%;
-  left: 7%;
+  top: -50%;
+  left: 85%;
   font-size: 1.34rem;
   color: rgb(253, 249, 249);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -87,6 +88,7 @@ body {
 .sidebar .nav-links {
   display: flex;
   flex-direction: column;
+  margin-top: 2rem;
 }
 
 .sidebar .nav-links a {
@@ -370,6 +372,7 @@ body {
 
 .display-products .filter-btn-container button {
   margin-right: 0.6rem;
+  margin-bottom: 0.5rem;
   background: none;
   border: 1px solid var(--nav-btn-color);
   padding: 0.3rem 0.5rem;
@@ -523,9 +526,9 @@ body {
   margin-top: 5rem;
 }
 
-.container-div {
-  /* border: 1px solid red; */
-}
+/* .container-div {
+  border: 1px solid red;
+} */
 
 .container-div .first-div,
 .container-div .second-div,
@@ -581,9 +584,9 @@ body {
   margin: 1.2rem 0 0.7rem 0;
 }
 
-.subscribe {
-  /* border: 1px solid red; */
-}
+/* .subscribe {
+  border: 1px solid red;
+} */
 
 .subscribe .subscribe-form {
   width: 100%;
@@ -620,9 +623,9 @@ body {
   background: rgb(201, 171, 6);
 }
 
-.subscribe .follow {
-  /* border: 1px solid red; */
-}
+/* .subscribe .follow {
+  border: 1px solid red;
+} */
 
 .subscribe .follow h1 {
   font-size: 1.1rem;
@@ -670,7 +673,7 @@ body {
   color: rgb(201, 171, 6);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   .container-div {
     display: grid;
     grid-template-rows: repeat(1, 1fr);
@@ -745,9 +748,9 @@ body {
   width: 100%;
 }
 
-.contact-us {
-  /* border: 1px solid blue; */
-}
+/* .contact-us {
+  border: 1px solid blue;
+} */
 
 .contact-us .contact-from-container {
   padding: 2rem;
@@ -882,7 +885,13 @@ body {
   background-color: rgb(134, 68, 68);
   border-color: rgb(134, 68, 68);
   color: white;
+  transition: var(--page-transition);
 }
+
+.control-btns .clear-cart:hover {
+  background-color: rgb(97, 50, 50);
+}
+
 .control-btns .buy-cart {
   background: gold;
   border: 1px solid gold;
@@ -891,7 +900,7 @@ body {
 }
 
 .control-btns .buy-cart:hover {
-  background: rgb(243, 207, 2);
+  background: rgb(212, 181, 4);
 }
 
 /* end */
